@@ -1,28 +1,26 @@
 .menu{
   background-color: #FFDEBA;
   margin: 0 auto;
+  padding: 1rem;
 }
 .menuContainer{
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   max-width: 1000px;
 }
+.menuToggle{
+  display: none;
+}
+
 .logoImg{
   max-height: 6vh;
+  max-width: 100%;
   animation: fadeIn 1s ease forwards;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
+
 a{
   animation: fadeIn 1s ease forwards;
   padding:  0.3rem 0.625rem;
@@ -35,3 +33,61 @@ a:hover{
   color: #c2917d
 }
 
+/* Responsividade */
+@media only screen and (max-width: 600px) {
+  .menuContainer{
+    display: none;
+  }
+  .menuToggle{
+    display: flex;
+  }
+  .menuToggle >img{
+    margin: 0 auto;
+  }
+  .bar{
+    width: 1.5rem;
+    height: 0.2rem;
+    border-radius: 4px;
+    background-color: #792606;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .showMenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #ffd09e;
+    border-radius: 4px;
+    z-index: 1;
+    opacity: 0;
+    animation: dropDown 0.5s ease forwards;
+  }
+  .showMenu >li{
+    margin: 2px 0;
+  }
+  .showMenu > img{
+    display: none
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes dropDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

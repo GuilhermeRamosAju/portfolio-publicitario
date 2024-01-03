@@ -1,5 +1,6 @@
 import images from './images/images.js';
 import styles from './Brands.module.css';
+
 const Brands = () =>{
   return(   
     <section className={styles.brandsContainer}>

@@ -1,9 +1,9 @@
-.aboutBg{
+.mainBg{
   margin: 0 auto;
   background: linear-gradient(90deg, #5B1F00 41.3%, #8B2F00 78.51%);
   box-shadow: 0px 10px 6.3px rgba(91, 31, 0, 0.15);
 }
-.aboutContainer{
+.mainContainer{
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -17,30 +17,67 @@
   align-items: center;
   gap: 1.875rem;
 }
-.aboutBg>img{
-  animation: fadeIn 3s ease forwards;
-  max-width: 500px;
+.mainContainer > img{
+  max-width: 100%;
+  height: auto;
 }
 .titleH1{
-font-family: 'DM Sans';
-font-weight: 700;
-font-size: 3.5rem;
-text-align: center;
-color: #E9E9E9;
-animation: fadeIn 1.5s ease forwards;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #E9E9E9;
+  animation: fadeIn 1.5s ease forwards;
 }
 .subTitle{
-font-family: 'Arimo';
-font-weight: 700;
-font-size: 1.2rem;
-text-align: center;
-color: #E9E9E9;
-animation: fadeIn 1s ease forwards;
+  font-family: 'Arimo';
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #E9E9E9;
+  animation: fadeIn 1s ease forwards;
 }
+
+@media only screen and (max-width: 700px) {
+  .mainContainer > img{
+    width: 50%;
+    height: auto;
+  }
+  .titleH1{
+    font-size: 2.5rem;
+  }
+  .subTitle{
+    font-size: 1rem;
+  }
+}
+
+/* Responsividade */
+@media only screen and (max-width: 500px) {
+  .mainBg{
+    background: linear-gradient(180deg, #5B1F00 75%, #8B2F00 100%);
+  }
+  .mainContainer{
+    height: 20vh;
+    width: 50vw;
+    gap: 2px
+  }
+  .mainContainer > img{
+    display: none;
+  }
+  .titleH1{
+  font-size: 24px;
+  text-align: center;
+  }
+  .subTitle{
+    font-size: 0.75rem;
+  }
+}
+
+/* Animações */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;

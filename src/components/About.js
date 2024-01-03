@@ -5,7 +5,10 @@ const About = () =>{
     <section className={styles.about} id="about">
       <img className={styles.aboutImg} src={about} alt="Adrya usando o computador" />
       <div className={styles.aboutTxt}>
-        <h2 className={styles.aboutH2}>Olá, sou Adrya.</h2>
+        <div className={styles.shortImg}>
+          <img className={styles.aboutImg780} src={about} alt="Adrya usando o computador" />
+          <h2 className={styles.aboutH2}>Olá, sou Adrya.</h2>
+        </div>
         <p className={styles.aboutP}>
           Uma jovem estudante de Comunicação Social - Publicidade e Propaganda. Com 21 anos de idade, sou movida por uma paixão intensa pela comunicação e todas as suas facetas.
         </p>
