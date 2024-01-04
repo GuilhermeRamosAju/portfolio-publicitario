@@ -10,9 +10,20 @@ const Carousel = ({ items }) => {
   const settings = {
     infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     centerMode: true,
     focusOnSelect: true,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: true,
+        },
+      },
+    ],
   };
   return(
     <div className={styles.carouselContainer}>

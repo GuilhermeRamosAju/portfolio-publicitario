@@ -4,7 +4,7 @@ import styles from './Brands.module.css';
 const Brands = () =>{
   return(   
     <section className={styles.brandsContainer}>
-      <span>Marcas com a minha marca</span>
+      <span>Algumas marcas que já trabalhei</span>
       <div className={styles.brandsImg}>
         <img src={images.marca1} alt="aracajucard" />
         <img src={images.marca2} alt="setransp" />

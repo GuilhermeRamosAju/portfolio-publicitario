@@ -64,8 +64,11 @@
   .mainContainer > img{
     display: none;
   }
+  .title{
+    gap: 1rem;
+  }
   .titleH1{
-  font-size: 24px;
+  font-size: 2rem;
   text-align: center;
   }
   .subTitle{

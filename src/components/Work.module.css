@@ -49,7 +49,7 @@
 .carouselImage,.carouselVideo{
   cursor: pointer;
   width: 22rem;
-  padding-left: 20vw;
+  padding-left: 10px;
   border-radius: inherit;
 }
 
@@ -67,6 +67,9 @@
 
 /* Responsividade */
 @media only screen and (max-width: 750px){
+  .carouselItem {
+    width: auto !important;
+  }
   .workPannel > span{
     font-size: 1.5rem;
   }
@@ -80,7 +83,7 @@
 
 @media only screen and (max-width: 500px){
   .carouselImage,.carouselVideo{
-    width: 30vw;
+    width: 50vw;
   }
   .workPannel > span{
     font-size: 1.5rem;
@@ -92,12 +95,11 @@
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 450px){
-  .carouselImage,.carouselVideo{
-    width: 25vw;
-  }
-}
+
 @media only screen and (max-width: 380px){
+  .carouselImage,.carouselVideo{
+    width: 100vw;
+  }
   #buttonContainer{
     gap: 1rem;
   }

@@ -7,7 +7,7 @@ const About = () =>{
       <div className={styles.aboutTxt}>
         <div className={styles.shortImg}>
           <img className={styles.aboutImg780} src={about} alt="Adrya usando o computador" />
-          <h2 className={styles.aboutH2}>Olá, sou Adrya.</h2>
+          <h2 className={styles.aboutH2}>Olá,<br /> Sou Adrya.</h2>
         </div>
         <p className={styles.aboutP}>
           Uma jovem estudante de Comunicação Social - Publicidade e Propaganda. Com 21 anos de idade, sou movida por uma paixão intensa pela comunicação e todas as suas facetas.

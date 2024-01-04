@@ -4,7 +4,7 @@
   max-width: 1000px;
   padding: 2rem;
   margin: 0 auto;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 .brandsImg{
@@ -19,13 +19,14 @@
 @media only screen and (max-width: 700px) {
   .brandsContainer{
     padding: 1rem;
-    gap: 2rem;
+    gap: 1rem;
 
   }
   .brandsContainer > span{
     font-size: 1.5rem;
   }
   .brandsImg{
+    padding-top: 1rem;
     gap: 3rem;
   }
   .brandsImg > img{

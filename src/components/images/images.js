@@ -12,7 +12,7 @@ import copy3 from './copy3.png';
 import copy4 from './copy4.png';
 import copy5 from './copy5.png';
 import copy6 from './copy6.png';
-import copy7 from './copy8.png';
+import copy7 from './copy7.png';
 import copy8 from './copy8.png';
 import copy9 from './copy9.png';
 import marca1 from './marca1.png';
